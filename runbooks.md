@@ -9,7 +9,7 @@
 ### Whats its do, Why do we need it?
 > Captures all the thinks we need daily 🤷‍♂️
 ##### OOM
-> Dragana noticed this first around mid october. It seems like some solvers require more than the ecs instances memory (6GB) and the oom happens.
+> Dragana noticed this first around Oct 6, 2025. It seems like some solvers require more than the ecs instances memory (6GB) and the oom happens.
 > Its noteworthy that spot gets 8GB and periodic gets 6GB so its more likely to happen on periodic.
 > So far this has only happened once in prod and the next run was ok. Keep an eye on this. We will have to address if it starts happening frequently.
 > [Slack link](https://prosperops.slack.com/archives/C05QE9203RS/p1759771594751189?thread_ts=1759771574.158699&cid=C05QE9203RS)
