@@ -13,3 +13,14 @@
 > Its noteworthy that spot gets 8GB and periodic gets 6GB so its more likely to happen on periodic.
 > So far this has only happened once in prod and the next run was ok. Keep an eye on this. We will have to address if it starts happening frequently.
 > [Slack link](https://prosperops.slack.com/archives/C05QE9203RS/p1759771594751189?thread_ts=1759771574.158699&cid=C05QE9203RS)
+
+##### Rerun
+> You can directly start a new execution of the BillingAccountDaily state machine using the new execution button from the failed run.
+> This is the goto path for things like a timeout failure. Just rerun it.
+
+
+
+## GcpBillingAccountHourly
+> For failures on IAM permissions i just let it run the next hour.
+> To query for the subsequent run search using the gcp billing account id. That will show you all the runs for that account.
+> The next iteration should pass. 
