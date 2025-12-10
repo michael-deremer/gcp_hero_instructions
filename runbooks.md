@@ -21,6 +21,14 @@
 
 
 ## GcpBillingAccountHourly
-> For failures on IAM permissions i just let it run the next hour.
-> To query for the subsequent run search using the gcp billing account id. That will show you all the runs for that account.
-> The next iteration should pass. 
+CopyIncrementalBillingExportData -> CreateBigQueryResources -> CaptureGcpProjects -> CaptureIamPermissions
+To search for subsequent success: search for GcpBillingAccountHourly state machine using gcp billing account id.
+##### Copy IncrementalBillingExportData
+Copies customers billing data from their dataset into prosperops. It uses a partition marker to find the last successful partition inported. Imports data every hour for current day until its finalized. 
+Typical Failure: the service bigquery has thrown an exception, no http status code was specified. Tons of failures but all recovered. 
+OnFailure: next run can recover missed hours.
+
+##### CaptureIamPermisssions
+OnFailure: just let it run the next hour.
+
+
