@@ -7,7 +7,7 @@
 
 ## Google Cloud Billing Account Daily
 ### Whats its do, Why do we need it?
-> Captures all the thinks we need daily 🤷‍♂️
+> Captures all the things we need daily 🤷‍♂️
 ##### OOM
 > Dragana noticed this first around Oct 6, 2025. It seems like some solvers require more than the ecs instances memory (6GB) and the oom happens.
 > Its noteworthy that spot gets 8GB and periodic gets 6GB so its more likely to happen on periodic.
