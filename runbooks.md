@@ -35,3 +35,4 @@ OnFailure: just let it run the next hour.
 
 ## GcpActionPlanner
 Rerun via buttons on the billing account page.
+You can run via runtask but that makes less sense nowadays.
