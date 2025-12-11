@@ -40,5 +40,21 @@ You can run via runtask but that makes less sense nowadays.
 
 
 ## Cud Purchase Work Item generation failures
-Rerun by clicking the action planner button on billing account page.
-This regenerates the action planner and submits cud purchase work items all via the all_action_planners BillingAccountsController endpoint
+To rerun all accounts use the tools button in admin-ui.
+To rerun a single account
+```
+{
+  "state_machine_input": {
+    "customer_id": "29751605-a4a0-42fa-bcab-403178201c29",
+    "inner_task_name": "Gcp.CudPurchasesWorkItems",
+    "additional_context": {
+      "gcp_billing_account_id": "d09814d8-d1d7-486a-a679-9749806580b6",
+      "must_complete_by_date": "2025-12-11T15:35:22.6212343Z",
+      "force": true,
+      "user_full_name": "Michael DeRemer"
+    },
+    "trace_header": "53c1c34019c542c0919842ae567ee40f-daeb4c3ad46247b1-1"
+  }
+}
+```
+
