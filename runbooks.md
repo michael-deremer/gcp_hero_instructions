@@ -45,15 +45,15 @@ To rerun a single account
 ```
 {
   "state_machine_input": {
-    "customer_id": "29751605-a4a0-42fa-bcab-403178201c29",
+    "customer_id": "<customer_id>",
     "inner_task_name": "Gcp.CudPurchasesWorkItems",
     "additional_context": {
-      "gcp_billing_account_id": "d09814d8-d1d7-486a-a679-9749806580b6",
-      "must_complete_by_date": "2025-12-11T15:35:22.6212343Z",
+      "gcp_billing_account_id": "gcp_billing_account_id",
+      "must_complete_by_date": "2025-12-11T15:35:00.0000000Z",
       "force": true,
       "user_full_name": "Michael DeRemer"
     },
-    "trace_header": "53c1c34019c542c0919842ae567ee40f-daeb4c3ad46247b1-1"
+    "trace_header": "<failed_trace_header>-1"
   }
 }
 ```
