@@ -40,7 +40,7 @@ You can run via runtask but that makes less sense nowadays.
 
 
 ## Cud Purchase Work Item generation failures
-To rerun all accounts use the tools button in admin-ui.
+To rerun all accounts use the tools button in admin-ui.  
 To rerun a single account
 ```
 {
