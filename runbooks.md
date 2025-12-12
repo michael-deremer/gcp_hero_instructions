@@ -36,7 +36,18 @@ OnFailure: just let it run the next hour.
 ## GcpActionPlanner
 Rerun via buttons on the billing account page.
 You can run via runtask but that makes less sense nowadays.
-
+```
+{
+  "state_machine_input": {
+    "dry_run": false,
+    "customer_id": "<customerId>",
+    "inner_task_name": "Gcp.BuildActionSheet",
+    "additional_context": {
+      "gcp_billing_account_id": "<billing_account_id>"
+    }
+  }
+}
+```
 
 
 ## Cud Purchase Work Item generation failures
