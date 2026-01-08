@@ -69,3 +69,13 @@ To rerun a single account
 }
 ```
 
+## GoogleCloudMarketplaceProvisioning
+Additional details about the failure usually present in #google-cloud-marketplace slack channel
+Sometimes the customer never follows through and logs in. This task checks if they logged in every 5 minutes for a day.
+A failure with "Retrying due to data not found" will be the indicator of this scenario.
+Other failure messages may be a different problem. In some cases we may have to take action.
+
+
+
+
+
